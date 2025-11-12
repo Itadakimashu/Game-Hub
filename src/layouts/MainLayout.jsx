@@ -2,7 +2,7 @@ import { Outlet } from "react-router";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const Homepage = () => {
+const MainLayout = () => {
   return (
     <div>
       <Navbar />
@@ -12,4 +12,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default MainLayout;

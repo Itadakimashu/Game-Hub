@@ -27,7 +27,11 @@ const GameCard = ({ game }) => {
           </span>
         </h2>
 
-        <p className="text-sm text-gray-600 line-clamp-2">{description}</p>
+        <p className="text-sm text-gray-600 line-clamp-2">
+          {description.length < 100
+            ? description
+            : `${description.slice(0, 97)}...`}
+        </p>
 
         <div className="flex items-center gap-2 mt-2">
           <div className="flex items-center">
