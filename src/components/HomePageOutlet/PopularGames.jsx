@@ -1,7 +1,13 @@
+import { useNavigate } from "react-router";
 import GameCard from "../GameCard";
 
 const PopularGames = ({ popularGames }) => {
   console.log(popularGames);
+  const navigate = useNavigate();
+  const handleViewAllGames = () => {
+    navigate("/discover");
+    window.scrollTo(0, 0);
+  };
   return (
     <div>
       <h2 className="text-2xl font-bold my-4">Popular Games</h2>
@@ -11,7 +17,10 @@ const PopularGames = ({ popularGames }) => {
         ))}
       </div>
       <div className="flex justify-center">
-        <button className="btn bg-blue-500 text-white rounded">
+        <button
+          className="btn btn-secondary text-white rounded"
+          onClick={handleViewAllGames}
+        >
           View All Games
         </button>
       </div>

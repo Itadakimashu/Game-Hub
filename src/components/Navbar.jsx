@@ -1,13 +1,15 @@
+import { NavLink } from "react-router";
+
 const Navbar = () => {
   const links = [
     <li>
-      <a>Home</a>
+      <NavLink to="/">Home</NavLink>
     </li>,
     <li>
-      <a>Discover</a>
+      <NavLink to="/discover">Discover</NavLink>
     </li>,
     <li>
-      <a>Services</a>
+      <NavLink to="/">Services</NavLink>
     </li>,
   ];
   return (

@@ -1,8 +1,7 @@
-import PopularGames from "../components/HomePageLayout/PopularGames";
-import NewsLetter from "../components/HomePageLayout/NewsLetter";
-import Banner from "../components/HomePageLayout/Banner";
+import PopularGames from "../components/HomePageOutlet/PopularGames";
+import NewsLetter from "../components/HomePageOutlet/NewsLetter";
+import Banner from "../components/HomePageOutlet/Banner";
 import { useLoaderData } from "react-router";
-import { useEffect, useState } from "react";
 
 const HomeOutlet = () => {
   const data = useLoaderData();
