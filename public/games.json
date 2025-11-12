@@ -1,0 +1,192 @@
+[
+  {
+    "id": "6",
+    "title": "Counter-Strike: Global Offensive",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg",
+    "category": "Tactical FPS",
+    "downloadLink": "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/",
+    "description": "CS:GO is a fast, competitive tactical shooter focused on team-based objectives and precise shooting mechanics.",
+    "ratings": "4.7",
+    "developer": "Valve"
+  },
+  {
+    "id": "8",
+    "title": "Dota 2",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/570/header.jpg",
+    "category": "MOBA",
+    "downloadLink": "https://www.dota2.com/",
+    "description": "Dota 2 is a deep and strategic MOBA where two teams of five players battle to destroy the enemy's Ancient.",
+    "ratings": "4.6",
+    "developer": "Valve"
+  },
+  {
+    "id": "9",
+    "title": "League of Legends",
+    "coverPhoto": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg",
+    "category": "MOBA",
+    "downloadLink": "https://www.leagueoflegends.com/",
+    "description": "League of Legends is a competitive MOBA with a large roster of champions, strategic gameplay, and ranked progression.",
+    "ratings": "4.5",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "11",
+    "title": "Rocket League",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/252950/header.jpg",
+    "category": "Sports / Action",
+    "downloadLink": "https://www.rocketleague.com/",
+    "description": "Rocket League combines soccer with high-octane car-based gameplay and competitive matches.",
+    "ratings": "4.4",
+    "developer": "Psyonix"
+  },
+  {
+    "id": "13",
+    "title": "Among Us",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg",
+    "category": "Party / Social Deduction",
+    "downloadLink": "https://www.innersloth.com/gameAmongUs.php",
+    "description": "Among Us is a multiplayer social deduction game where crewmates complete tasks while impostors try to sabotage them.",
+    "ratings": "4.1",
+    "developer": "Innersloth"
+  },
+  {
+    "id": "15",
+    "title": "Cyberpunk 2077",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg",
+    "category": "RPG",
+    "downloadLink": "https://www.cyberpunk.net/",
+    "description": "Cyberpunk 2077 is an open-world RPG set in Night City, featuring narrative-driven missions and deep character customization.",
+    "ratings": "4.0",
+    "developer": "CD Projekt Red"
+  },
+  {
+    "id": "16",
+    "title": "The Witcher 3: Wild Hunt",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/292030/header.jpg",
+    "category": "RPG",
+    "downloadLink": "https://thewitcher.com/en/witcher3",
+    "description": "The Witcher 3 is an open-world RPG with a rich story, memorable characters, and expansive quests.",
+    "ratings": "4.9",
+    "developer": "CD Projekt Red"
+  },
+  {
+    "id": "17",
+    "title": "Grand Theft Auto V",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg",
+    "category": "Action / Open World",
+    "downloadLink": "https://www.rockstargames.com/V/",
+    "description": "GTA V is an open-world action game featuring story-driven missions, multiplayer (GTA Online), and an expansive city to explore.",
+    "ratings": "4.7",
+    "developer": "Rockstar Games"
+  },
+  {
+    "id": "18",
+    "title": "Assassin's Creed Valhalla",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1446780/header.jpg",
+    "category": "Action / RPG",
+    "downloadLink": "https://www.ubisoft.com/game/assassins-creed/valhalla",
+    "description": "Assassin's Creed Valhalla is an action RPG about Vikings, raiding, and building a settlement in England.",
+    "ratings": "4.3",
+    "developer": "Ubisoft"
+  },
+  {
+    "id": "19",
+    "title": "Red Dead Redemption 2",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/header.jpg",
+    "category": "Action / Open World",
+    "downloadLink": "https://www.rockstargames.com/reddeadredemption2",
+    "description": "RDR2 is an open-world western with immersive storytelling, realistic world simulation, and deep character arcs.",
+    "ratings": "4.9",
+    "developer": "Rockstar Games"
+  },
+  {
+    "id": "20",
+    "title": "Baldur's Gate 3",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1086940/header.jpg",
+    "category": "RPG",
+    "downloadLink": "https://baldursgate3.game",
+    "description": "Baldur's Gate 3 is a story-rich CRPG built on Dungeons & Dragons rules with turn-based combat and deep roleplay.",
+    "ratings": "4.8",
+    "developer": "Larian Studios"
+  },
+  {
+    "id": "21",
+    "title": "Elden Ring",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg",
+    "category": "Action RPG",
+    "downloadLink": "https://en.bandainamcoent.eu/elden-ring/elden-ring",
+    "description": "Elden Ring is an open-world action RPG featuring challenging combat, exploration, and deep lore created with George R. R. Martin contribution.",
+    "ratings": "4.9",
+    "developer": "FromSoftware / Bandai Namco"
+  },
+  {
+    "id": "22",
+    "title": "Hollow Knight",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/367520/header.jpg",
+    "category": "Metroidvania",
+    "downloadLink": "https://www.team-cherry.com.au/hollowknight",
+    "description": "Hollow Knight is an atmospheric Metroidvania with tight platforming, exploration, and beautiful art.",
+    "ratings": "4.8",
+    "developer": "Team Cherry"
+  },
+  {
+    "id": "23",
+    "title": "Stardew Valley",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/413150/header.jpg",
+    "category": "Simulation",
+    "downloadLink": "https://www.stardewvalley.net/",
+    "description": "Stardew Valley is a farming simulation with crafting, relationship-building, and exploration of mines and festivals.",
+    "ratings": "4.9",
+    "developer": "ConcernedApe"
+  },
+  {
+    "id": "24",
+    "title": "Portal 2",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/620/header.jpg",
+    "category": "Puzzle / FPS",
+    "downloadLink": "https://store.steampowered.com/app/620/Portal_2/",
+    "description": "Portal 2 is a single- and cooperative-player puzzle game that challenges players to solve physics-based tests using a portal gun.",
+    "ratings": "4.9",
+    "developer": "Valve"
+  },
+  {
+    "id": "25",
+    "title": "Hades",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg",
+    "category": "Roguelike / Action",
+    "downloadLink": "https://store.steampowered.com/app/1145360/Hades/",
+    "description": "Hades is a rogue-like dungeon crawler where you battle out of the Underworld as Zagreus, using a cast of powerful gods to upgrade your weapons and abilities.",
+    "ratings": "4.8",
+    "developer": "Supergiant Games"
+  },
+  {
+    "id": "26",
+    "title": "Dead Cells",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/588650/header.jpg",
+    "category": "Roguelike / Metroidvania",
+    "downloadLink": "https://store.steampowered.com/app/588650/Dead_Cells/",
+    "description": "Dead Cells is a roguelike, metroidvania-inspired action-platformer with fast-paced combat and procedurally-generated levels.",
+    "ratings": "4.7",
+    "developer": "Motion Twin"
+  },
+  {
+    "id": "27",
+    "title": "Celeste",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/504230/header.jpg",
+    "category": "Platformer",
+    "downloadLink": "https://store.steampowered.com/app/504230/Celeste/",
+    "description": "Celeste is a precision platformer about climbing a mountain, featuring tight controls, a touching story, and challenging levels.",
+    "ratings": "4.8",
+    "developer": "Extremely OK Games"
+  },
+  {
+    "id": "28",
+    "title": "Terraria",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/105600/header.jpg",
+    "category": "Sandbox / Adventure",
+    "downloadLink": "https://store.steampowered.com/app/105600/Terraria/",
+    "description": "Terraria is an action-adventure sandbox game with exploration, building, crafting, combat, and mining.",
+    "ratings": "4.6",
+    "developer": "Re-Logic"
+  }
+]
