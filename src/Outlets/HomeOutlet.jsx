@@ -1,9 +1,13 @@
 import PopularGames from "../components/HomePageLayout/PopularGames";
+import NewsLetter from "../components/HomePageLayout/NewsLetter";
 
 const HomeOutlet = () => {
   return (
-    <div className="w-[95%] mx-auto">
-      <PopularGames />
+    <div>
+      <div className="w-[95%] mx-auto my-8">
+        <PopularGames />
+      </div>
+      <NewsLetter />
     </div>
   );
 };

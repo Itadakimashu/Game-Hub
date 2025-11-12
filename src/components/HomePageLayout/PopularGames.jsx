@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router";
 import GameCard from "../GameCard";
 
 const PopularGames = () => {
-  const data = useLoaderData();
+  const data = useLoaderData().slice(0, 8);
   return (
     <div>
       <h2 className="text-2xl font-bold my-4">Popular Games</h2>
