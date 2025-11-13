@@ -3,6 +3,7 @@ import NewsLetter from "../components/HomePageOutlet/NewsLetter";
 import Banner from "../components/HomePageOutlet/Banner";
 import { useLoaderData, useOutletContext } from "react-router";
 import { use, useEffect, useState } from "react";
+import MarqueeText from "../components/HomePageOutlet/MarqueeText";
 
 const HomeOutlet = () => {
   const [setLoading] = useOutletContext();
@@ -21,11 +22,11 @@ const HomeOutlet = () => {
     fetchData();
   }, []);
 
-  console.log(popularGames);
-
   return (
     <div>
       <Banner popularGames={popularGames} />
+      <MarqueeText />
+
       <div className="w-[95%] mx-auto my-8">
         <PopularGames popularGames={popularGames} />
       </div>

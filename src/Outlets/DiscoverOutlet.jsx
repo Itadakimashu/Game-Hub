@@ -10,7 +10,6 @@ const DiscoverOutlet = () => {
       document.title = "Discover - Game Hub";
       setLoading(true);
       const games = await fetch("/games.json").then((res) => res.json());
-      console.log(games);
       setGames(games);
       setLoading(false);
     };

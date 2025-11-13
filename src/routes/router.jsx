@@ -5,6 +5,8 @@ import DiscoverOutlet from "../Outlets/DiscoverOutlet";
 import ServicesOutlet from "../Outlets/ServicesOutlet";
 import GameDetailsOutlet from "../Outlets/GameDetailsOutlet";
 import PageNotFound from "../components/PageNotFound";
+import LoginOutlet from "../Outlets/LoginOutlet";
+import RegisterOutlet from "../Outlets/RegisterOutlet";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <ServicesOutlet />,
+      },
+      {
+        path: "/login",
+        element: <LoginOutlet />,
+      },
+      {
+        path: "/register",
+        element: <RegisterOutlet />,
       },
     ],
   },

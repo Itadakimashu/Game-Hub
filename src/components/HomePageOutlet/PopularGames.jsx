@@ -2,7 +2,6 @@ import { useNavigate } from "react-router";
 import GameCard from "../GameCard";
 
 const PopularGames = ({ popularGames }) => {
-  console.log(popularGames);
   const navigate = useNavigate();
   const handleViewAllGames = () => {
     navigate("/discover");
