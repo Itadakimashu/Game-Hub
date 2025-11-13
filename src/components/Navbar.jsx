@@ -1,16 +1,11 @@
 import { NavLink } from "react-router";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const links = [
-    <li>
-      <NavLink to="/">Home</NavLink>
-    </li>,
-    <li>
-      <NavLink to="/discover">Discover</NavLink>
-    </li>,
-    <li>
-      <NavLink to="/">Services</NavLink>
-    </li>,
+    <NavLink to="/">Home</NavLink>,
+    <NavLink to="/discover">Discover</NavLink>,
+    <NavLink to="/services">Services</NavLink>,
   ];
   return (
     <div className="navbar bg-base-100 shadow-sm">
@@ -37,13 +32,21 @@ const Navbar = () => {
             tabIndex="-1"
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            {links}
+            {links.map((link, index) => (
+              <li key={index}>{link}</li>
+            ))}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">GameHub</a>
+        <NavLink to="/">
+          <img src={logo} alt="Game Hub Logo" />
+        </NavLink>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{links}</ul>
+        <ul className="menu menu-horizontal px-1">
+          {links.map((link, index) => (
+            <li key={index}>{link}</li>
+          ))}
+        </ul>
       </div>
       <div className="navbar-end space-x-4">
         <a className="btn">Login</a>

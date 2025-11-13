@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router";
+
 const GameCard = ({ game }) => {
   const {
     id,
@@ -9,6 +11,12 @@ const GameCard = ({ game }) => {
     ratings,
     developer,
   } = game;
+  const navigate = useNavigate();
+
+  const handleViewDetail = () => {
+    navigate(`/discover/${id}`);
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div className="card bg-base-100 w-96 shadow-xl hover:shadow-2xl transition-shadow">
@@ -20,12 +28,10 @@ const GameCard = ({ game }) => {
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title text-lg font-bold flex-1">
-          {title}{" "}
-          <span className="badge badge-secondary whitespace-nowrap text-sm ml-2 font-semibold">
-            {category}
-          </span>
-        </h2>
+        <div className="flex flex-col gap-1">
+          <h2 className="card-title text-lg font-bold flex-1">{title} </h2>
+          <p className="text-sm text-gray-500">{category}</p>
+        </div>
 
         <p className="text-sm text-gray-600 line-clamp-2">
           {description.length < 100
@@ -42,7 +48,9 @@ const GameCard = ({ game }) => {
         </div>
 
         <div className="card-actions justify-end mt-4">
-          <button className="btn btn-primary btn-sm">View Details</button>
+          <button className="btn btn-primary btn-sm" onClick={handleViewDetail}>
+            View Details
+          </button>
         </div>
       </div>
     </div>

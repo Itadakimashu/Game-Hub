@@ -11,7 +11,7 @@ const PopularGames = ({ popularGames }) => {
   return (
     <div>
       <h2 className="text-2xl font-bold my-4">Popular Games</h2>
-      <div className="grid grid-cols-3 gap-4 p-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
         {popularGames?.map((game) => (
           <GameCard key={game.id} game={game} />
         ))}
