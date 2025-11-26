@@ -12,7 +12,7 @@ const Banner = ({ popularGames }) => {
   }, [slides.length]);
 
   return (
-    <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-2xl mb-12">
+    <div className="relative w-full h-[500px] overflow-hidden shadow-2xl mb-12">
       {slides.map((game, index) => (
         <div
           key={game.id}

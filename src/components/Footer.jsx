@@ -2,58 +2,44 @@ import facebook from "../assets/facebook.svg";
 import X from "../assets/X.svg";
 import linkedin from "../assets/linkedin.svg";
 import mail from "../assets/mail.svg";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
     <div className="min-h-[400px] bg-[#001931] text-white">
-      <div className=" grid grid-cols-1 md:grid-cols-6 py-[80px] px-[30px] gap-[20px]">
+      <div className=" grid grid-cols-1 md:grid-cols-5 py-[80px] px-[30px] gap-[20px]">
         <ul className="md:col-span-2 flex flex-col gap-[20px]">
           <li className="text-lg font-semibold">Game Hub</li>
           <li className="text-sm text-purple-100">
-            Game Hub is your ultimate gaming destination, bringing together the
-            best games from various genres. Discover new adventures, download
-            exciting titles, and explore our curated collection of games - from
-            action-packed shooters to strategic puzzles. Join our gaming
-            community and find your next gaming obsession today.
+            Your ultimate destination for discovering indie games. Browse our curated collection, 
+            explore detailed game information, and find your next favorite title. Join our gaming 
+            community today.
           </li>
         </ul>
 
         <ul className="flex flex-col gap-[20px]">
-          <li className="text-lg font-semibold">Company</li>
-          <li className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors">
-            About Us
-          </li>
-          <li className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors">
-            Our Team
-          </li>
-          <li className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors">
-            Contact Us
-          </li>
+          <li className="text-lg font-semibold">Quick Links</li>
+          <Link to="/" className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors">
+            Home
+          </Link>
+          <Link to="/discover" className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors">
+            Discover Games
+          </Link>
+          <Link to="/services" className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors">
+            Services
+          </Link>
         </ul>
 
         <ul className="flex flex-col gap-[20px]">
-          <li className="text-lg font-semibold">Games</li>
-          <li className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors">
-            Browse All Games
-          </li>
-          <li className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors">
-            Popular Games
-          </li>
-          <li className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors">
-            New Releases
-          </li>
-        </ul>
-
-        <ul className="flex flex-col gap-[20px]">
-          <li className="text-lg font-semibold">Support</li>
+          <li className="text-lg font-semibold">Legal</li>
           <li className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors">
             Privacy Policy
           </li>
           <li className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors">
-            Terms & Conditions
+            Terms of Service
           </li>
           <li className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors">
-            Help Center
+            Cookie Policy
           </li>
         </ul>
 
@@ -65,7 +51,7 @@ const Footer = () => {
               alt="Facebook"
               className="w-[20px] h-[20px] bg-white rounded-full px-[3px] py-[2px]"
             />
-            <li className="text-sm text-purple-100">GameHub</li>
+            <li className="text-sm text-purple-100">@GameHub</li>
           </div>
           <div className="flex gap-[10px] items-center">
             <img
@@ -73,7 +59,7 @@ const Footer = () => {
               alt="X"
               className="w-[20px] h-[20px] bg-white rounded-full px-[3px] py-[2px]"
             />
-            <li className="text-sm text-purple-100">GameHub</li>
+            <li className="text-sm text-purple-100">@GameHub</li>
           </div>
           <div className="flex gap-[10px] items-center">
             <img
@@ -81,11 +67,11 @@ const Footer = () => {
               alt="LinkedIn"
               className="w-[20px] h-[20px] bg-white rounded-full px-[3px] py-[2px]"
             />
-            <li className="text-sm text-purple-100">GameHub</li>
+            <li className="text-sm text-purple-100">GameHub Official</li>
           </div>
           <div className="flex gap-[10px] items-center">
             <img src={mail} alt="Mail" className="" />
-            <li className="text-sm text-purple-100">support@gamehub.com</li>
+            <li className="text-sm text-purple-100">contact@gamehub.com</li>
           </div>
         </ul>
       </div>
