@@ -4,7 +4,7 @@ A modern game discovery platform for exploring and finding indie games. Browse t
 
 ## 🔗 Live Site
 
-[Live URL will be added after deployment]
+https://rococo-vacherin-609a02.netlify.app/
 
 ## ✨ Key Features
 
