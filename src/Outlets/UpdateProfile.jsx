@@ -27,7 +27,6 @@ const UpdateProfile = () => {
         }, 1500);
       })
       .catch((error) => {
-        console.log(error.message);
         setError("Failed to update profile. Please try again.");
       });
   };

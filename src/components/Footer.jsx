@@ -11,21 +11,30 @@ const Footer = () => {
         <ul className="md:col-span-2 flex flex-col gap-[20px]">
           <li className="text-lg font-semibold">Game Hub</li>
           <li className="text-sm text-purple-100">
-            Your ultimate destination for discovering indie games. Browse our curated collection, 
-            explore detailed game information, and find your next favorite title. Join our gaming 
-            community today.
+            Your ultimate destination for discovering indie games. Browse our
+            curated collection, explore detailed game information, and find your
+            next favorite title. Join our gaming community today.
           </li>
         </ul>
 
         <ul className="flex flex-col gap-[20px]">
           <li className="text-lg font-semibold">Quick Links</li>
-          <Link to="/" className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors">
+          <Link
+            to="/"
+            className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors"
+          >
             Home
           </Link>
-          <Link to="/discover" className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors">
+          <Link
+            to="/discover"
+            className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors"
+          >
             Discover Games
           </Link>
-          <Link to="/services" className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors">
+          <Link
+            to="/services"
+            className="text-sm text-purple-100 hover:text-white cursor-pointer transition-colors"
+          >
             Services
           </Link>
         </ul>

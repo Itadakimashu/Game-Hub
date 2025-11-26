@@ -22,7 +22,6 @@ const LoginOutlet = () => {
     loginUser(email, password)
       .then((result) => {
         const loggedUser = result.user;
-        console.log(loggedUser);
         navigate(from, { replace: true });
       })
       .catch((error) => {
@@ -46,7 +45,6 @@ const LoginOutlet = () => {
     setError("");
     googleSignup()
       .then((result) => {
-        console.log(result.user);
         navigate(from, { replace: true });
       })
       .catch((error) => {

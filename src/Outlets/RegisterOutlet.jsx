@@ -44,12 +44,10 @@ const RegisterOutlet = () => {
             navigate("/");
           })
           .catch((error) => {
-            console.log(error.message);
             setError("Failed to update profile. Please try again.");
           });
       })
       .catch((error) => {
-        console.log(error.message);
         // Display user-friendly error messages
         if (error.code === "auth/email-already-in-use") {
           setError("This email is already registered. Please login instead.");
@@ -71,7 +69,6 @@ const RegisterOutlet = () => {
     setError("");
     googleSignup()
       .then((result) => {
-        console.log(result.user);
         navigate("/");
       })
       .catch((error) => {
