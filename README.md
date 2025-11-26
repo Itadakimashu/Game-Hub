@@ -1,16 +1,59 @@
-# React + Vite
+# Game Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern game discovery platform for exploring and finding indie games. Browse through a curated collection of games, view detailed information, and manage your gaming profile.
 
-Currently, two official plugins are available:
+## 🔗 Live Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Live URL will be added after deployment]
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Game Discovery**: Browse through a collection of indie games with detailed information
+- **User Authentication**: Secure login and registration with email/password or Google
+- **Password Security**: Password validation requiring uppercase, lowercase, and minimum 6 characters
+- **Google Authentication**: Quick sign-up and login with Google account
+- **User Profile Management**: View and update your profile information including name and photo
+- **Password Recovery**: Forgot password feature with email reset functionality
+- **Protected Routes**: Secure access to game details and profile pages
+- **Responsive Design**: Fully responsive layout for mobile, tablet, and desktop
+- **Smooth Animations**: Beautiful animations using Motion library (formerly Framer Motion)
+- **Dynamic Page Titles**: Each page has a descriptive title
+- **404 Error Page**: Custom page not found design
 
-## Expanding the ESLint configuration
+## 📦 NPM Packages Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **react** (^19.2.0) - JavaScript library for building user interfaces
+- **react-router** (^7.9.5) - Declarative routing for React applications
+- **firebase** (^12.5.0) - Authentication and backend services
+- **motion** (^12.23.24) - Animation library for smooth transitions
+- **react-fast-marquee** (^1.6.5) - Scrolling text component
+- **tailwindcss** (^4.1.17) - Utility-first CSS framework
+- **daisyui** (^5.5.0) - Tailwind CSS component library
+- **vite** (^7.2.2) - Fast build tool and dev server
+
+## 📱 Pages
+
+- **Home** - Featured games and popular selections
+- **Discover** - Browse all available games
+- **Services** - Information about platform services
+- **Game Details** - Detailed view of individual games (Protected)
+- **Login** - User authentication
+- **Register** - New user registration
+- **Forgot Password** - Password recovery
+- **My Profile** - User profile information (Protected)
+- **Update Profile** - Edit profile details (Protected)
+- **404** - Custom error page
+
+## 🔐 Authentication Features
+
+- Email/Password registration and login
+- Google OAuth integration
+- Password validation (uppercase, lowercase, 6+ characters)
+- Password reset via email
+- Protected routes with authentication checks
+- Persistent login state
+- Secure logout functionality
+
+## 👨‍💻 Developer
+
+Created with ❤️ for game enthusiasts

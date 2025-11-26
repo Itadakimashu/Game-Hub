@@ -1,24 +1,23 @@
 import { useLoaderData, useOutletContext } from "react-router";
 import GameCard from "../components/GameCard";
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
+import { AuthContext } from "../provider/AuthProvider";
+import { motion } from "motion/react";
 
 const DiscoverOutlet = () => {
-  const [setLoading] = useOutletContext();
-  const [Games, setGames] = useState([]);
-  useEffect(() => {
-    const fetchData = async () => {
-      document.title = "Discover - Game Hub";
-      setLoading(true);
-      const games = await fetch("/games.json").then((res) => res.json());
-      setGames(games);
-      setLoading(false);
-    };
-    fetchData();
-  }, []);
+  document.title = "Discover | Game Hub";
+  const Games = useLoaderData();
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
-      {Games.map((game) => (
-        <GameCard key={game.id} game={game} />
+      {Games.map((game, index) => (
+        <motion.div
+          key={game.id}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: index * 0.1 }}
+        >
+          <GameCard game={game} />
+        </motion.div>
       ))}
     </div>
   );

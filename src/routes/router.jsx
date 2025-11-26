@@ -7,6 +7,11 @@ import GameDetailsOutlet from "../Outlets/GameDetailsOutlet";
 import PageNotFound from "../components/PageNotFound";
 import LoginOutlet from "../Outlets/LoginOutlet";
 import RegisterOutlet from "../Outlets/RegisterOutlet";
+import ForgotPassword from "../Outlets/ForgotPassword";
+import MyProfile from "../Outlets/MyProfile";
+import UpdateProfile from "../Outlets/UpdateProfile";
+import Loader from "../components/Loader";
+import PrivateRoute from "../provider/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -17,29 +22,58 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <HomeOutlet />,
+        loader: () => fetch("/games.json"),
+        hydrateFallbackElement: <Loader />,
       },
       {
         path: "/discover",
         element: <DiscoverOutlet />,
-      },
-      {
-        path: "/discover/:id",
-        Component: GameDetailsOutlet,
         loader: () => fetch("/games.json"),
+        hydrateFallbackElement: <Loader />,
       },
       {
         path: "/services",
         element: <ServicesOutlet />,
       },
-      {
-        path: "/login",
-        element: <LoginOutlet />,
-      },
-      {
-        path: "/register",
-        element: <RegisterOutlet />,
-      },
     ],
+  },
+  {
+    path: "/discover/:id",
+    element: (
+      <PrivateRoute>
+        <GameDetailsOutlet />
+      </PrivateRoute>
+    ),
+    loader: () => fetch("/games.json"),
+    hydrateFallbackElement: <Loader />,
+  },
+  {
+    path: "/login",
+    element: <LoginOutlet />,
+  },
+  {
+    path: "/register",
+    element: <RegisterOutlet />,
+  },
+  {
+    path: "/forgot-password",
+    element: <ForgotPassword />,
+  },
+  {
+    path: "/my-profile",
+    element: (
+      <PrivateRoute>
+        <MyProfile />
+      </PrivateRoute>
+    ),
+  },
+  {
+    path: "/update-profile",
+    element: (
+      <PrivateRoute>
+        <UpdateProfile />
+      </PrivateRoute>
+    ),
   },
 ]);
 

@@ -2,24 +2,25 @@ import { Outlet } from "react-router";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Loader from "../components/Loader";
-import { useState } from "react";
+import { use } from "react";
+import { AuthContext } from "../provider/AuthProvider";
 
 const MainLayout = () => {
-  const [loading, setLoading] = useState(false);
+  const { loading, setLoading } = use(AuthContext);
   return (
     <div>
-      <header>
-        <Navbar />
-      </header>
-      <main className="bg-base-200">
-        {loading && <Loader />}
-        <div className={loading ? "hidden" : ""}>
-          <Outlet context={[setLoading]} />
-        </div>
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      {loading && <Loader setLoading={setLoading} />}
+      <div className={loading ? "hidden" : ""}>
+        <header>
+          <Navbar />
+        </header>
+        <main className="bg-base-200">
+          <Outlet />
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
     </div>
   );
 };
